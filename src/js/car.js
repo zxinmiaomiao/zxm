@@ -63,6 +63,10 @@
         $('#monetTotal .num').html($allNum);
         $('.chekc-price').find(".p1 span").html(($allPrice).toFixed(2));
     }
+
+
+
+    
     // 全选/取消全选
     $('#allinput').on('change', function () {
         $('.goods-item:visible').find(':checkbox').prop('checked', $(this).prop('checked'));
