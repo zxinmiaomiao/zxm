@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="css/car_add.css">
+</head>
+
+<body>
+    <!-- 购物车 -->
+    <div id="mycar_box">
+        <div class="cart-wrap">
+            <div class="carbox_top">
+                <h2>我的购物车</h2>
+                <div class="cart_header">
+                    <input type="checkbox" />极速达(99元包邮)
+                </div>
+                <!-- 购物车提示 -->
+                <div class="cart_header_right">
+                    <p class="tips tips-text">
+                        <i class="i-arrow"></i>
+                        <em class="o-arrow"></em>
+                        购物车升级咯～不同品类的商品可以分步结算啦！<br> 想加什加什么，结算的事儿购物车都会帮您打理好，就等您一键下单～
+                    </p>
+                    <i class="iconfont icon-light">&#xe502;</i>
+                </div>
+            </div>
+
+
+
+            <div id="sam_cart">
+                <div class="car_emptybox"  style="display: none">
+                    <!-- 空购物车 -->
+                    <div class="empty">
+                        <p class="text">您的购物车还是空的</p>
+                        <a href="index-00.html" class="link" target="_blank">去逛逛</a>
+                    </div>
+                </div>
+                <!-- 购物车 -->
+                <div class="car_bigbox">
+                    <div class="floor-header">
+                        <h3 class="floor-title">
+                            <i class="iconfont icon-type">
+                                &#xe607;
+                            </i>
+                            普通商品
+                        </h3>
+                        <!-- 优惠券-->
+                        <a href="javascript:;" title="" class="floor-turn"><span>收起</span><i
+                                class="icon-arrow iconfont">&#xe60a;</i></a>
+                    </div>
+
+                    <!-- 列表内容 -->
+                    <div id="good_car_content">
+                        <div class="floor_box clear ">
+                            <div>
+                                <span class=" car_inputboxtop"><input type="checkbox" checked="" id="allinput"></span>
+
+                                <span class="car_toptitile info_t">商品信息</span>
+                                <span class="car_toptitile price">单价（元）</span>
+                                <span class="car_toptitile amount">数量</span>
+                                <span class="car_toptitile weight">重量（含包装）</span>
+                                <span class="car_toptitile total">小计（元）</span>
+                                <span class="car_toptitile oper">操作</span>
+                            </div>
+
+                        </div>
+
+                        <div class="item-list">
+
+                            <!-- 商品列表 -->
+                            <div class="goods-item goods-item-sele" style="display: none;">
+                                <div class="goods-info">
+                                    <div class="cell b-checkbox">
+                                        <div class="cart-checkbox">
+                                            <input type="checkbox" checked="" name="" id="" value="">
+                                            <span class="line-circle"></span>
+                                        </div>
+                                    </div>
+                                    <div class="cell b-goods">
+                                        <div class="goods-name">
+                                            <div class="goods-pic">
+                                                <a href=""><img
+                                                        src="https://img.alicdn.com/bao/uploaded/i2/12401207/TB2WxT5umtYBeNjSspaXXaOOFXa_!!0-saturn_solar.jpg_200x200q90.jpg_.webp"
+                                                        alt="" ></a>
+                                            </div>
+                                            <div class="goods-msg">
+                                                <div class="goods-d-info">
+                                                    <a href="">户外炊具野餐包 套锅气罐 收纳包野炊餐具包</a>
+                                                </div>
+                                                <div class="goods-ex">
+                                                    <span class="promise"></span>
+                                                    <span class="promise">
+                                                        <i class="iconfont">
+                                                            &#xe63b;</i><a href="">支持7天无理由退货 </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cell b-price">
+                                        <strong>25.25</strong>
+                                        <div class="sales-promotion-dropdown">
+                                        </div>
+                                    </div>
+                                    <div class="b_price_boxnum">
+                                        <div class="cell b-quantity">
+                                            <div class="quantity-form">
+                                                <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                <input type="text" value="1">
+                                                <a class="quantity-add" href="javascript:void(0)">+</a>
+                                            </div>
+                                            <div class="quantity-text">有货</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cell b-props">
+                                        <div class="prop-text">50g</div>
+                                    </div>
+                                    <div class="cell b-sum">
+                                        <strong>25.25</strong>
+                                    </div>
+                                    <div class="cell b-action">
+                                        <a href="javascript:void(0)">删除</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="foot_car">
+                            <div class="foot_car_left">
+                                <div class="del_pl"><a href="#">批量删除</a></div>
+                                <div class="check-weight ck">
+                                    <p class="p1"><em>合计重量</em></br><span>2.85</span>g</p>
+                                </div>
+                                <div class="check-freight ck">
+                                    <p class="p1"><em>预估运费</em></br><span>¥0.00</span></p>
+                                </div>
+                                <div class="chekc-price ck">
+                                    <p class="p1"><em>商品金额</em></br><span>¥ 733.80</span></p>
+                                </div>
+                                <div class="check-cutdown ck">
+                                    <p class="p1"><em>优惠金额</em></br><span>-¥ 0.00</span></p>
+                                </div>
+
+                            </div>
+                            <div class="foot_car_right">
+                                <div id="monetTotal" class="check-total">
+                                    <em>合计</em>
+                                    <span class="">¥<i>733.80</i></span>
+                                    (<u class="num">3</u>件)
+                                    <!-- <div class="add-num">+1</div> -->
+                                </div>
+                                <button id="js_btn">去结算</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/car.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+
+</html>

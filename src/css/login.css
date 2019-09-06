@@ -1,0 +1,214 @@
+.login_bg {
+    background: #f8f8f8;
+}
+
+.login_topbg {
+    width: 190px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.logo-box {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.login_text {
+    margin-top: 30px;
+    border-top: 1px solid #b3b3b3;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+.login_text em {
+    position: relative;
+    top: -15px;
+    background: #f8f8f8;
+    padding: 0 20px;
+    line-height: 30px;
+    font-style: normal;
+}
+
+/* login */
+
+.regist_box .login_form {
+    width: 442px;
+    margin: 0 auto;
+}
+
+.regist_box {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.regist_box h4 {
+    padding: 25px 0;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.login_form, .regist_form {
+    width: 442px;
+    margin: 0 auto;
+}
+
+.login_form .tel_box, .regist_form .tel_box, .usename_box, .password_box, .repassword_box, .email_box {
+    position: relative;
+}
+
+.login_form .telphone, .login_form .password, .login_form .usename, .regist_form .telphone, .regist_form .password, .regist_form .usename, .regist_form .repassword, .regist_form .email {
+    width: 440px;
+    height: 36px;
+    border: 1px solid #dcdcdc;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 36px;
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+
+
+.tips_wrong {
+    display: none;
+    color: #f22727;
+    text-indent: 10px;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.tips_right {
+    display: none;
+    font-size: 12px;
+    top: 38px;
+    color: green;
+    text-indent: 10px;
+    line-height: 32px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #006aaf;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+
+/* 注册 */
+
+.regist_form {
+    width: 442px;
+    margin: 0 auto;
+}
+
+.tips-box-default {
+    font-size: 12px;
+    top: 38px;
+    color: #aaa;
+    text-indent: 10px;
+    line-height: 32px
+}
+
+.password-strength {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    padding-top: 9px;
+    line-height: 12px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.password-strength em, .password-strength i, .password-strength span, .password-strength u, .password-strength s {
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    margin-left: 4px;
+    background: #d0d0d0;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+
+.password-strength i {
+    background: #5dbcfa;
+}
+
+.password-strength span {
+    background: #3d9fdf;
+}
+
+.password-strength u {
+    background: #1b84c8;
+}
+.password-strength s {
+    background: #006aaf;
+}
+.password-strength-default{
+    display: block;
+}
+.password_box .ycang {
+    display: none;
+}
+
+
+
+/* 协议信息 */
+
+.agreement {
+    position: relative;
+    font-size: 12px;
+}
+
+.agreement input[type="checkbox"]:checked {
+    background-color: #006aaf;
+}
+
+.agreement input[type="checkbox"] {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #006aaf;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+a.blue-link, .blue-font {
+    color: #06c;
+}
+
+.btn_box_submit {
+    margin: 24px 15px 0;
+    width: 220px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #006aaf;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}

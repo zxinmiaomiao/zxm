@@ -1,0 +1,259 @@
+#mycar_box {}
+
+.cart-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    color: #666;
+}
+
+#sam_cart .car_emptybox {
+    /* display: none; */
+}
+
+.carbox_top {
+    height: 90px;
+    width: 100%;
+}
+
+.carbox_top h2 {
+    float: left;
+    width: 105px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #0069aa;
+    margin-top: 40px;
+}
+
+.carbox_top .cart_header {
+    float: left;
+    height: 50px;
+    margin: 40px 0 0 14px;
+    line-height: 50px;
+    font-size: 12px;
+    color: #666;
+}
+
+.carbox_top .cart_header>input {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 18px 4px 0 0px;
+}
+
+.cart_header_right {
+    position: relative;
+    float: right;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.cart_header_right>p {
+    position: absolute;
+    right: 35px;
+    bottom: 10px;
+    width: 380px;
+    padding: 10px;
+    border: 1px solid #e5debc;
+    background: #fff7d1;
+    color: #977a6f;
+    font-size: 12px;
+}
+
+.icon-light {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.o-arrow {
+    right: -6px;
+    bottom: 3px;
+    border-left: 6px solid #e5debc;
+    border-top: 6px dashed transparent;
+    border-bottom: 6px dashed transparent;
+    position: absolute;
+}
+
+.i-arrow {
+    right: -4px;
+    bottom: 5px;
+    z-index: 1;
+    position: absolute;
+    border-left: 4px solid #fff7d1;
+    border-top: 4px dashed transparent;
+    border-bottom: 4px dashed transparent;
+}
+
+/* 购物车 */
+
+/* 空购物车 */
+
+.empty {
+    position: relative;
+    height: 450px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    background: #fafafa url(../img/kong-img.png) no-repeat center 70px;
+}
+
+.empty .text {
+    position: absolute;
+    bottom: 185px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+.empty>.link {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    width: 220px;
+    height: 54px;
+    margin-left: -110px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    background: #0069aa;
+}
+
+.car_bigbox {
+    border: 1px solid #e3e3e3;
+    margin-bottom: 60px;
+}
+
+.floor-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 15px;
+    background: #fafafa;
+}
+
+.floor-header .floor-turn {
+    cursor: pointer;
+}
+
+.cart-wrap a {
+    color: #666;
+}
+
+.floor-turn .icon-arrow {
+    font-size: 16px;
+    margin: -2px 0 0 10px;
+}
+
+.floor-table {
+    width: 100%;
+}
+
+.floor-table .table-thead {
+    height: 50px;
+    line-height: 50px;
+}
+
+#good_car_content {
+    border-top: 1px solid #e3e3e3
+}
+
+.foot_car {
+    border-top: 1px solid #e3e3e3;
+    background: #f8f8f8;
+    height: 60px;
+    font-size: 12px;
+}
+
+.foot_car .del_pl {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.foot_car .del_pl>a {
+    color: #0069aa;
+}
+
+.check-weight, .foot_car .ck {
+    float: left;
+    height: 40px;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.check-weight>p {
+    line-height: 20px;
+}
+
+.check-weight>p>em {
+    float: left
+}
+
+.check-weight>p>span {
+    float: left
+}
+
+.check-total {
+    position: relative;
+    float: left;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 10px 0 0;
+}
+
+.check-total em {
+    display: block;
+}
+
+.check-total span {
+    margin: 0 5px;
+    color: #0069aa;
+    font-size: 14px;
+}
+
+.check-total span i {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.foot_car_left {
+    float: left;
+    padding: 10px 0;
+}
+
+.foot_car_right {
+    float: right
+}
+
+#js_btn {
+    float: right;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    background: #6cae38;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    border: none
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login_bg">
+        <div class="login_topbg">
+            <div class="logo-box">
+                <a href="">
+                    <img src="https://security.samsclub.cn/front-passport/passport/images/sam/logo.png">
+                </a>
+            </div>
+            <h3 class="login_text"><em>欢迎注册</em></h3>
+        </div>
+    </div>
+    <div class="regist_box">
+
+        <div class="regist_form">
+            <div class="usename_box">
+                <input type="text" placeholder="用户名" class="usename">
+                <p class="tips-box-default">4-20位字符，可由中文、英文、数字</p>
+            </div>
+            <div class="email_box">
+                <input type="text" placeholder="邮箱地址" class="email">
+                <p class="tips-box-default">请输入常用邮箱，可用作登录账户，接受订单通知和找回密码之用</p>
+      
+            </div>
+            <div class="password_box">
+                <input type="password" placeholder="您的密码" class="password">
+                <p class="tips-box-default">6-20位字符，可由大小写英文、数字或符号“-”“_”组成</p>
+     
+                <div id="passwordCheck">
+                    <div class="password-strength password-strength-default"> 密码强度：<em></em><em></em><em></em><em></em>
+                    </div>
+                    <div class="password-strength password-strength-l ycang">密码强度：<i></i><em></em><em></em><em></em>
+                    </div>
+                    <div class="password-strength password-strength-m ycang">密码强度：<i></i><span></span><em></em><em></em>
+                    </div>
+                    <div class="password-strength password-strength-h ycang">密码强度：<i></i><span></span><u></u><em></em>
+                    </div>
+                    <div class="password-strength password-strength-cq ycang">密码强度：<i></i><span></span><u></u><s></s>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="repassword_box">
+                <input type="password" placeholder="确认密码" class="repassword">
+                <p class="tips-box-default">请再次输入上面的密码</p>
+          
+            </div>
+            <div class="tel_box">
+                <input type="text" placeholder="您的手机号" class="telphone" name="telphone">
+                <p class="tips-box-default">请输入手机号</p>
+         
+            </div>
+
+            <div class="agreement">
+                <input type="checkbox" checked >
+                <label for="feed-checkbox">订阅优惠信息</label>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" checked >
+                <label for="agreement-checkbox">我已阅读并同意<a href="#" class="blue-link"
+                        target="_blank">《山姆网站使用条款》</a></label>
+            </div>
+            <div class="btn_box_submit">
+                <a class="submit-btn" id="register-btn" target="_blank">提交</a>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
