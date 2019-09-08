@@ -34,15 +34,12 @@ aInput[0].onblur = function () {
                     $('.usename_box .tips-box-default').html('用户名不能为空-----请输入4-20位字符').css({ 'color': 'red' });
 
                 } else {
-                    $('.usename_box .tips-box-default').html('用户名已经').css({ 'color': 'red' });
+                    $('.usename_box .tips-box-default').html('用户名已经存在，请修改').css({ 'color': 'red' });
+                    aInput[0].focus();
                     usenameflag = false;
                 }
 
-               
             });
-
-
-
 
             aInput[1].focus();
         } else {
@@ -69,7 +66,10 @@ aInput[1].onblur = function () {
         if (email.test(this.value)) {
             $('.email_box .tips-box-default').html('输入正确-----请输入下一列').css({ 'color': 'green' });
             emailflag = true;
-            aInput[2].focus();
+            if ($('.password_box input').val() == '') {
+                aInput[2].focus();
+            }
+
         } else {
             $('.email_box .tips-box-default').html('格式不符合要求-----请输入正确的邮箱').css({ 'color': 'red' });
             emailflag = false;

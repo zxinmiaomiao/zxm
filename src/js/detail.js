@@ -1,5 +1,6 @@
 !function ($) {
-
+    // 引入头部
+    $('header').load('head.html');
     // 取得首页传过来的值
     $sid = location.search.substring(1).split('=')[1];
     $.ajax({
@@ -9,12 +10,14 @@
         },
         dataType: 'json'
     }).done(function (d) {
+
         let $smallpic = d.urls.split(',');
         $('#small_pic img').attr('src', d.url);
+        $('#df img').attr('src', d.url);
         $('#small_pic img').attr('sid', d.sid); //添加自定义属性sid
         $('#goods_titile_detail').html(d.titile);
         $('.pricenum strong ').html(d.price);
-        //拼接小图片
+        // //拼接小图片
         let $htmlstr = ''
         $.each($smallpic, function (index, value) {
             $htmlstr += `
@@ -145,6 +148,21 @@
         }(jQuery)
 
         // 加入购物车
+        // 数量++
+
+        $('#addnum').on('click', function () {
+            var $goodsnum = $('#input_addnum').val();
+            $goodsnum++;
+            $('#input_addnum').val($goodsnum);
+        });
+        // 数量--
+        $('#reducenum').on('click', function () {
+            var $goodsnum = $('#input_addnum').val();
+            $goodsnum++;
+            $('#input_addnum').val($goodsnum);
+        });
+
+        // 存cookie数量和编号
         let sidarr = [];
         let numarr = [];
         function cookieToArray() {
@@ -177,23 +195,8 @@
                 addcookie('cookienum', numarr.toString(), 10);
                 sidarr.push($sid);
             }
-
         });
-
-
-
     });
-
-
-
-
-
-
-
-
-
-    // 购物车数量增加
-
-
+$('footer').load('footer.html');
 
 }(jQuery)

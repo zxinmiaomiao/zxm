@@ -7,11 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/car.css">
     <link rel="stylesheet" href="css/car_add.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+    <!-- 头部效果 -->
+    <header>
+    </header>
+
     <!-- 购物车 -->
     <div id="mycar_box">
         <div class="cart-wrap">
@@ -34,7 +40,7 @@
 
 
             <div id="sam_cart">
-                <div class="car_emptybox"  style="display: none">
+                <div class="car_emptybox" style="display: none" id="emptybox">
                     <!-- 空购物车 -->
                     <div class="empty">
                         <p class="text">您的购物车还是空的</p>
@@ -72,7 +78,6 @@
                         </div>
 
                         <div class="item-list">
-
                             <!-- 商品列表 -->
                             <div class="goods-item goods-item-sele" style="display: none;">
                                 <div class="goods-info">
@@ -85,13 +90,13 @@
                                     <div class="cell b-goods">
                                         <div class="goods-name">
                                             <div class="goods-pic">
-                                                <a href=""><img
-                                                        src="https://img.alicdn.com/bao/uploaded/i2/12401207/TB2WxT5umtYBeNjSspaXXaOOFXa_!!0-saturn_solar.jpg_200x200q90.jpg_.webp"
-                                                        alt="" ></a>
+                                                <a href="">
+                                                    <img src="" alt="">
+                                                </a>
                                             </div>
                                             <div class="goods-msg">
                                                 <div class="goods-d-info">
-                                                    <a href="">户外炊具野餐包 套锅气罐 收纳包野炊餐具包</a>
+                                                    <a href=""></a>
                                                 </div>
                                                 <div class="goods-ex">
                                                     <span class="promise"></span>
@@ -105,7 +110,7 @@
                                     </div>
 
                                     <div class="cell b-price">
-                                        <strong>25.25</strong>
+                                        <strong></strong>
                                         <div class="sales-promotion-dropdown">
                                         </div>
                                     </div>
@@ -132,11 +137,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
-
-
                         <div class="foot_car">
                             <div class="foot_car_left">
                                 <div class="del_pl"><a href="#">批量删除</a></div>
@@ -174,9 +175,14 @@
             </div>
 
         </div>
-        <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/car.js" type="text/javascript" charset="utf-8"></script>
+    </div>
+    <!-- 购物车结束 -->
+    <!-- 尾部 -->
+    <footer></footer>
+    <!-- 尾部结束 -->
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/car.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 

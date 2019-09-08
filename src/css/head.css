@@ -37,7 +37,9 @@ body a {
 .top .top_left a {
     color: #fff;
 }
-
+.customer_welcome{
+    display:none;
+}
 .top .top_right {
     float: right;
     height: 100%;
@@ -62,7 +64,6 @@ body a {
     width: 1px;
     height: 12px;
     background-color: #005c9d;
-    float: left;
     margin-top: 6px;
 }
 
@@ -75,15 +76,19 @@ body a {
     background-color: #005c9d;
 }
 
-.top .top_right a {
+.top .top_right ul>li>a {
     color: #a5c7db;
     display: block;
-    padding: 0 10px;
     float: left;
+    width: 86px;
 }
 
-.top .top_right ul li>a.active {
-    background-color: #015c92;
+.top .top_right ul>li>a>span {
+    padding-left: 10px;
+}
+
+.top .top_right ul>li:hover>a {
+    background: #015c92;
     color: #fff;
 }
 
@@ -103,6 +108,11 @@ body a {
     -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    display: none;
+}
+
+.top .top_right ul>li:hover>.top_subnav {
+    display: block;
 }
 
 .top .top_subnav em {
@@ -133,6 +143,11 @@ body a {
     height: 28px;
     line-height: 28px;
     color: #333;
+    padding: 0 10px;
+}
+
+#header .top_right .top_subnav a:hover {
+    color: #0069aa;
 }
 
 #header.top_right .top_subnav a {}
@@ -242,7 +257,9 @@ body a {
     position: relative;
     margin-right: 30px;
 }
-
+.sanm_search .iconfont{
+    color:silver;
+}
 .sanm_search input {
     width: 350px;
     height: 34px;
@@ -272,7 +289,7 @@ body a {
     float: left;
     width: 40px;
     height: 36px;
-    background: cyan
+
 }
 
 .cart-title {
@@ -288,7 +305,6 @@ body a {
     font-size: 20px;
     color: #fff;
     top: 15px;
-    background: crimson
 }
 
 .cart-title-num {
@@ -317,13 +333,21 @@ body a {
     line-height: 40px;
 }
 
-.nav>li {
+#header_nav .nav_box .nav>li {
     float: left;
     width: 9%;
     position: relative;
 }
 
-.nav>li>a {
+#header_nav .nav_box .nav>li:hover {
+    background: #f1f1f1;
+}
+
+#header_nav .nav_box .nav>li:hover>a {
+    color: #004b8d;
+}
+
+#header_nav .nav>li>a {
     display: block;
     color: #fff;
     position: relative;
@@ -332,9 +356,9 @@ body a {
     cursor: pointer;
 }
 
-.nav>li>a:hover {
-    background: #f1f1f1;
-}
+/* .nav>li>a:hover {
+ 
+} */
 
 /* 二级导航 */
 
@@ -354,6 +378,11 @@ body a {
     border-top: 0;
     background-color: #f1f1f1;
     font-size: 12px;
+    display: none;
+    z-index: 9999;
+}
+#header_nav .nav_box .nav>li:hover .header_subnav{
+    display: block;
 }
 
 .header_subnav>.goods_type {

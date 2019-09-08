@@ -12,17 +12,30 @@
 </head>
 
 <body>
-    <div id="header" style="display: block">
+    <!-- 头部效果 -->
+    <div id="header">
         <div class="header_top">
             <div class="inner">
                 <!-- 顶部 -->
                 <div class="top">
                     <div class="top_left">
-                        <span> 上午好, 山姆欢迎您！</span>
-                        <a href="" class="login"> 登录</a>
-                        <i class="line">|</i>
-                        <a href="" class="register"> 注册</a>
+                        <!-- 客人初始进来状态 -->
+                        <div class="customer_default">
+                            <span> 上午好, 山姆欢迎您！</span>
+                            <a href="login.html" class="login" target="_blank"> 登录</a>
+                            <i class="line">|</i>
+                            <a href="register.html" class="register" target="_blank"> 注册</a>
+                        </div>
+                        <!-- 登录成功后状态 -->
+                        <div class="customer_welcome" id="welcome_login">
+                            <strong><a id="customeName" href="javascript:;"></a></strong>
+                            <span> 上午好,欢迎光临山姆会员店！ </span>
+                            <a id="login_off" href="#" class="sign-out">[退出]</a>
+                        </div>
+
                     </div>
+
+
                     <div class="top_right">
                         <ul>
                             <li>
@@ -33,11 +46,11 @@
                                 </a>
 
                                 <!-- top2级导航 -->
-                                <div class="top_subnav" style="display: block;">
+                                <div class="top_subnav">
                                     <em></em>
                                     <a href="">个人资料</a>
                                     <a href="">我的订单</a>
-                                    <a href="">我的积分</a>
+                                    <a href="">我的优惠券</a>
                                     <a href="">我的订单</a>
                                     <a href="">个人资料</a>
                                     <a href="">我的订单</a>
@@ -50,6 +63,15 @@
                                     <i class="iconfont">&#xe60a;
                                     </i>
                                 </a>
+                                <!-- top2级导航 -->
+
+                                <div class="top_subnav">
+                                    <em></em>
+                                    <a href="">常见问题</a>
+                                    <a href="">忘记密码</a>
+                                    <a href="">联系我们</a>
+                                    <a href="">我的订单</a>
+                                </div>
                             </li>
                             <!-- <div class="line"></div> -->
                             <li>
@@ -58,21 +80,36 @@
                                     <i class="iconfont">&#xe60a;
                                     </i>
                                 </a>
+                                <!-- top2级导航 -->
+                                <div class="top_subnav">
+                                    <em></em>
+                                    <a href="">常购清单</a>
+                                    <a href="">我的订单</a>
+                                </div>
                             </li>
                             <!-- <div class="line"></div> -->
                             <li>
                                 <a href="">
                                     <span>会籍介绍</span>
-
+                                    <i class="iconfont">&#xe60a;</i>
                                 </a>
+                                <div class="top_subnav">
+                                    <em></em>
+                                    <a href="">常购清单</a>
+                                    <a href="">我的订单</a>
+                                </div>
                             </li>
                             <div class="line"></div>
                             <li>
                                 <a href="">
                                     <span>我的山姆</span>
-                                    <i class="iconfont">&#xe60a;
-                                    </i>
+                                    <i class="iconfont">&#xe60a;</i>
                                 </a>
+                                <div class="top_subnav">
+                                    <em></em>
+                                    <a href="">常购清单</a>
+                                    <a href="">我的订单</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -120,13 +157,13 @@
                         <div>
                             <div class="sanm_search">
                                 <input type="text" />
-                                <button > <i class="iconfont">&#xe505;
+                                <button> <i class="iconfont">&#xe505;
                                     </i></button>
                             </div>
 
                             <div class="cart_inconfont">
                                 <div class="cart-title">
-                                    <a target="_blank" href="">
+                                    <a target="_blank" href="shopcar.html">
                                         <span class="iconfont cart-title-bg">&#xe505;</span>
                                         <span class="cart-title-num" id="">0</span>
                                     </a>
@@ -227,7 +264,86 @@
 
                         </li>
 
-                        <li><a href="">生鲜食品</a></li>
+                        <li><a href="">生鲜食品</a>
+                            <div class="header_subnav goods_type_width">
+                                <div class="goods_type left ">
+                                    <dl>
+                                        <dt>
+                                            <a href="">肉蛋水产</a>
+                                        </dt>
+                                        <dd><a href="">海参/礼盒</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 猪肉</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 禽类</a></dd>
+                                        <dd><a href="">肉制品</a></dd>
+                                        <dd><a href="">鲜蛋/蛋制品</a></dd>
+                                        <dd><a href="">虾类</a></dd>
+                                        <dd><a href="">蟹类</a></dd>
+                                        <dd><a href="">海鲜制品</a></dd>
+                                        <dd><a href="">贝类</a></dd>
+                                        <dd><a href="">鱼类</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="goods_type left">
+                                    <dl>
+                                        <dt>
+                                            <a href="">肉蛋水产</a>
+                                        </dt>
+                                        <dd><a href="">海参/礼盒</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 猪肉</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 禽类</a></dd>
+                                        <dd><a href="">肉制品</a></dd>
+                                        <dd><a href="">鲜蛋/蛋制品</a></dd>
+                                        <dd><a href="">虾类</a></dd>
+                                        <dd><a href="">蟹类</a></dd>
+                                        <dd><a href="">海鲜制品</a></dd>
+                                        <dd><a href="">贝类</a></dd>
+                                        <dd><a href="">鱼类</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="goods_type left">
+                                    <dl>
+                                        <dt>
+                                            <a href="">肉蛋水产</a>
+                                        </dt>
+                                        <dd><a href="">海参/礼盒</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 猪肉</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 禽类</a></dd>
+                                        <dd><a href="">肉制品</a></dd>
+                                        <dd><a href="">鲜蛋/蛋制品</a></dd>
+                                        <dd><a href="">虾类</a></dd>
+                                        <dd><a href="">蟹类</a></dd>
+                                        <dd><a href="">海鲜制品</a></dd>
+                                        <dd><a href="">贝类</a></dd>
+                                        <dd><a href="">鱼类</a></dd>
+                                    </dl>
+                                </div>
+                                <div class="goods_type left">
+                                    <dl>
+                                        <dt>
+                                            <a href="">肉蛋水产</a>
+                                        </dt>
+                                        <dd><a href="">海参/礼盒</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 猪肉</a></dd>
+                                        <dd><a href="">牛/羊肉</a></dd>
+                                        <dd><a href=""> 禽类</a></dd>
+                                        <dd><a href="">肉制品</a></dd>
+                                        <dd><a href="">鲜蛋/蛋制品</a></dd>
+                                        <dd><a href="">虾类</a></dd>
+                                        <dd><a href="">蟹类</a></dd>
+                                        <dd><a href="">海鲜制品</a></dd>
+                                        <dd><a href="">贝类</a></dd>
+                                        <dd><a href="">鱼类</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="">速食面点</a></li>
                         <li><a href="">粮油干货</a></li>
                         <li><a href="">零食乳品</a></li>
@@ -365,8 +481,20 @@
 
         </div>
     </div>
-
-
+    <script>
+        // 登录成功后信息更改
+        let inforusename = getcookie("useinfor");
+        if (inforusename) {
+            $('.top_left .customer_default').css("display", "none").siblings().css("display", "block");
+            $('#customeName').html(inforusename);
+        }
+        $('#login_off').on('click', function () {
+            $('.top_left .customer_default').css("display", "block").siblings().css("display", "none");
+            delcookie('useinfor');
+            location.reload();
+        });
+        console.log(inforusename);
+    </script>
 
 </body>
 

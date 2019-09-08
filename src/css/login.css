@@ -211,4 +211,5 @@ a.blue-link, .blue-font {
     font-size: 18px;
     font-family: "Microsoft YaHei";
     font-weight: bold;
+    cursor: pointer;
 }

@@ -1,0 +1,75 @@
+.global-footer {
+    background-color: #ebebeb;
+    color: #666;
+    border-top: 30px #e6e6e6 solid;
+    font-size: 12px;
+}
+
+.global-footer a {
+    text-decoration: none;
+}
+
+.global-center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.global-footer .footer-region {
+    margin-top: -30px;
+    line-height: 30px;
+}
+.global-footer .footer-region .footer-list{
+    padding-bottom: 30px;
+}
+.global-footer .footer-region .footer-list dl.first {
+    width: 16%;
+    text-align: center;
+}
+.global-footer .footer-region .footer-list dl.first img{
+    margin-top:35px;
+}
+
+.global-footer .footer-region .footer-list dl.first p {
+    line-height: 20px;
+}
+
+.global-footer .footer-region .footer-list dl {
+    float: left;
+    display: inline;
+    width: 14%;
+    text-align: left;
+}
+.global-footer .footer-region .footer-list dt{
+
+}
+.global-footer .footer-region .footer-list dt a{
+    color:#333;
+}
+
+.global-footer .footer-region .footer-list dl .info {
+    margin-top: 25px;
+}
+
+.global-footer .footer-region .footer-list dl .info a {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #666;
+
+}
+
+.global-footer .footer-region .footer-list dl .info  a:hover {
+    color: #0069aa;
+}
+.global-footer .footer-nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.global-footer .footer-nav a{
+    color: #666;
+}
+.global-footer .footer-nav a:hover{
+    color: #0069aa; 
+}

@@ -1,5 +1,11 @@
 
 !function ($) {
+    // 引入头部
+    $('header').load('head.html');
+
+
+
+    // 轮播图
     class lunbo {
         constructor() {
             this.sambanner = $('.sambanner');
@@ -47,6 +53,7 @@
     }
     new lunbo().init();
 
+    
     // 会员热购列表
 
     class bestbuy {
@@ -72,12 +79,12 @@
     }
     new bestbuy().init();
 
-// 列表
+    // 渲染列表
     $.ajax({
         url: "http://localhost/1907-project-zxm/src/php/sanmu.php",
         dataType: 'json',
     }).done(function (recommends) {
-        console.log(recommends);
+
         let strhtml = '<ul>';
         $.each(recommends, function (index, value) {
             strhtml += `
@@ -112,5 +119,5 @@
         $('.rec_goodslist').html(strhtml);
     })
 
-
+    $('footer').load('footer.html');
 }(jQuery);

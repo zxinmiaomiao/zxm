@@ -8,13 +8,15 @@
     <title>描述</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
-    <div class="inner">
-        <h2><a href="shopcar.html" target="_blank">进入购物车</a></h2>
-    </div>
+    <!-- 头部开始 -->
+    <header></header>
+    <!-- 头部结束 -->
+
     <div class="detail_titile">
         <div class="inner">
             <div class="titile_list">
@@ -22,12 +24,10 @@
                 <a href="">美容护理<i class="iconfont">&#xe611;</i></a>
                 <a href="">面部护肤<i class="iconfont">&#xe611;</i></a>
                 <a href="">面膜<i class="iconfont">&#xe611;</i></a>
-                <a class="blue ellipsis_tag" href="">JMsolution 肌司研莹蜂胶面膜（或肌司妍水滋养水滢补水面膜） 2盒*10片</a>
+                <a class="blue ellipsis_tag" href="" id="smalltitle">固客蛋黄酥雪媚娘海鸭蛋麻薯整箱早餐网红小零食品小吃儿童糕点心</a>
             </div>
         </div>
-
     </div>
-
     <div class="detail_titile_box">
         <div class="inner">
             <div class="detail_totalbox">
@@ -36,30 +36,18 @@
                     <div class="smlist_box">
                         <div class="movelist">
                             <ul class="smallimg_list">
-                                <!-- <li class="active"><img src="img/1.jpg" alt=""></li>
-                                <li><img src="img/2.jpg" alt=""></li>
-                                <li><img src="img/3.jpg" alt=""></li>
-                                <li><img src="img/4.jpg" alt=""></li>
-                                <li><img src="img/5.jpg" alt=""></li>
-                                <li><img src="img/6.jpg" alt=""></li>
-                                <li><img src="img/7.jpg" alt=""></li>
-                                <li><img src="img/8.jpg" alt=""></li>
-                                <li><img src="img/9.jpg" alt=""></li> -->
-
                             </ul>
                         </div>
                         <a href="javascript:;" class="up iconfont">&#xe60a;</a>
                         <a href="javascript:;" class="down iconfont">&#xe60a;</a>
-
-
                     </div>
                     <div id="small_pic">
-                        <img src="img/1.jpg" alt="">
+                        <img src="" alt="">
                         <div id="smf"></div>
                     </div>
                     <div id="df">
                         <!-- style="visibility: visible;" -->
-                        <img src="img/1.jpg" alt="" id="bpic">
+                        <img src="" alt="" id="bpic">
                     </div>
                 </div>
                 <!-- 右侧信息 -->
@@ -107,30 +95,27 @@
                                 <div class="yhd_province clearfix">
                                     <div class="yhd_area_select">
                                         <div class="yhd_address">
-                                            <span class="yhd_val_text ellipsis_tag">上海市浦东新区浦东新区牡丹路145弄25号</span>
+                                            <span class="yhd_val_text ellipsis_tag">上海浦东新区浦东新区牡丹路145弄25号</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <span class="color" id="stockstatus">有货</span><span id="deliveryMsg">,16:20前下单,预计09月01日
+                            <span class="color" id="stockstatus">有货</span><span id="deliveryMsg">16:20前下单,预计09月01日
                                 16:30-17:30送达</span>
                         </div>
                         <!-- <p id="deliverMap" class="maps">仅配送<a class="" href="javascript:;">指定区域<i
                                     class="iconfont">&#xe63b;</i></a></p> -->
                     </div>
-
                     <div class="tags"> <i class="icons iconfont">&#xe503;</i><a href="">不支持7天无理由退货</a></div>
-
                     <div class="carbox_btn">
                         <div class="numbers">
                             <div class="reduce iconfont" id="reducenum">-</div>
                             <div class="num"><input type="text" value="1" id="input_addnum"> </div>
                             <div class="add iconfont" id="addnum">+</div>
                         </div>
-
-                        <div class="cartbtn" id="addCart">
+                        <a class="cartbtn" id="addCart" href="shopcar.html">
                             <i class="iconfont">&#xe505;</i>加入购物车
-                        </div>
+                        </a>
 
                     </div>
                 </div>
@@ -157,15 +142,15 @@
                 <div id="tabbox_js">
                     <img src="http://d8.samsclub-estore.com/N10/M04/A9/95/ChEi3FtsDBSAWuW3AAE8V-UhdKQ551.jpg" alt="">
                 </div>
-                <div id="tabbox_cs">
+                <!-- <div id="tabbox_cs">
                     规格
                     净重(g)500
                     包装
                     包装袋装
                     产地
-                </div>
-                <div id="tabbox_pl">
-                    601***    
+                </div> -->
+                <!-- <div id="tabbox_pl">
+   
                     山姆的发票系统是见过最愚蠢的系统。每次实体店开票，
                     需要手动输入20位左右印的极小的流水号，每次都要输入发票信息，
                     每次开都要等24小时甚至以上很久，才能开出来，每次都要重新输入邮箱，
@@ -173,10 +158,8 @@
                 </div>
                 <div id="tabbox_zx">
                     <h1>我要咨询</h1>
-                </div>
+                </div> -->
             </div>
-
-
 
         </div>
     </div>
@@ -185,8 +168,9 @@
     <div id="top_box">
         <i class="icon iconfont">&#xe60a;</i>
     </div>
-
-    <div style="background: cyan;height:500px; margin-top: 30px;"></div>
+    <!-- 尾部 -->
+    <footer></footer>
+    <!-- 尾部结束 -->
     <script src="js/jquery.js"></script>
     <script src="js/detail.js"></script>
     <script src="js/public.js"></script>

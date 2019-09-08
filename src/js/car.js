@@ -1,4 +1,6 @@
 !function ($) {
+    // 引入头部
+    $('header').load('head.html')
     if (getcookie('cookiesid') && getcookie('cookienum')) {
         let csid = getcookie('cookiesid').split(',');
         let cnum = getcookie('cookienum').split(',');
@@ -20,19 +22,20 @@
                     // console.log(value.sid);
                     let $clonebox = $('.goods-item:hidden').clone(true, true);
                     $clonebox.css('display', 'block');
-
+                    $clonebox.find('.goods-name .goods-pic').find('a').attr('href', `detail.html?sid=${value.sid}`);
                     $clonebox.find('.goods-name .goods-pic').find('img').attr('src', value.url);
                     $clonebox.find('.goods-pic').find('img').attr('sid', value.sid);
+                    $clonebox.find('.goods-d-info').find('a').attr('href', `detail.html?sid=${value.sid}`);
                     $clonebox.find('.goods-d-info').find('a').html(value.titile);
                     $clonebox.find('.b-price').find('strong').html(value.price);
                     $clonebox.find('.quantity-form').find('input').val(num);
-
                     // 小计
                     let $zmoney = (value.price * num).toFixed(2);
                     $clonebox.find('.b-sum strong').html($zmoney);
                     // $('.check-weight')
                     $('.item-list').append($clonebox);
                     pricetotal();
+
                 }
             });
 
@@ -49,6 +52,9 @@
             $('.car_emptybox').show().siblings().hide();
         }
     }
+
+
+
     // 计算总价,选中的商品
     function pricetotal() {
         let $allPrice = 0;
@@ -66,7 +72,6 @@
 
 
 
-    
     // 全选/取消全选
     $('#allinput').on('change', function () {
         $('.goods-item:visible').find(':checkbox').prop('checked', $(this).prop('checked'));
@@ -179,9 +184,19 @@
         cookieToArray();//得到数组,上面的删除cookie需要。
         if (confirm('你确定要删除吗？')) {
             $(this).first().parents('.goods-item').remove();//通过当前点击的元素找到整个一行列表，删除
+            pricetotal();
+            if ($('#monetTotal span i').html() == 0) {
+                // location.reload();
+                $('.car_emptybox').show();
+                $('.car_bigbox').hide();
+            }
         }
         delgoodslist($(this).first().parents('.goods-info').find('img').attr('sid'), arrsid);
-        pricetotal();
+
+        if ($('.goods-item:visible').size() == 0) {
+            $('.car_emptybox').show();
+            $('.car_bigbox').hide();
+        }
     });
 
     //删除全部商品的函数
@@ -195,8 +210,11 @@
                 }
             });
             pricetotal();
+
         }
+        location.reload();
     });
+    $('footer').load('footer.html')
+}(jQuery)
 
 
-}(jQuery) 
