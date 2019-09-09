@@ -6,6 +6,7 @@
         let cnum = getcookie('cookienum').split(',');
         // console.log(csid, cnum);
         $.each(csid, function (index, value) {
+            console.log(value);
             showgoodlists(value, cnum[index]);
         })
     }
@@ -16,10 +17,11 @@
             url: "http://localhost/1907-project-zxm/src/php/sanmu.php",
             dataType: 'json',
         }).done(function (data) {
+            console.log(data);
             $.each(data, function (index, value) {
                 let $strhtml = '';
                 if (value.sid == sid) {
-                    // console.log(value.sid);
+                    console.log(value.sid);
                     let $clonebox = $('.goods-item:hidden').clone(true, true);
                     $clonebox.css('display', 'block');
                     $clonebox.find('.goods-name .goods-pic').find('a').attr('href', `detail.html?sid=${value.sid}`);
@@ -90,6 +92,8 @@
         pricetotal();
     })
 
+
+
     // 数量增加
     $('.quantity-form .quantity-add ').on('click', function () {
         let $count = $(this).parents('.b_price_boxnum').find('.quantity-form input').val();
@@ -115,7 +119,6 @@
         pricetotal();
         setcookie($(this));
     })
-
 
     //直接输入改变数量
     $('.quantity-form input').on('input', function () {

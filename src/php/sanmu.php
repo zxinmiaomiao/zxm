@@ -14,10 +14,13 @@ mysql_query('SET NAMES UTF8');
 $result = mysql_query("select * from sam");
 $arr = array();
 //mysql_num_rows():获取记录集的条数
-//mysql_fetch_array($result,MYSQL_ASSOC):获取记录的第一条，没执行一次，继续获取吓一条。
+//mysql_fetch_array($result,MYSQL_ASSOC):获取记录的第一条，没执行一次，继续获取一条。
 //MYSQL_ASSOC:获取的数组是字符串下标。
 for ($i = 0; $i < mysql_num_rows($result); $i++) {
 	$arr[$i] = mysql_fetch_array($result, MYSQL_ASSOC);
 }
 
 echo json_encode($arr);
+
+
+

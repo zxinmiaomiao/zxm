@@ -149,11 +149,19 @@
 
         // 加入购物车
         // 数量++
+        // 验证数字
+        let regsvalue = /^[1-9]\d*$/;
+        $('#input_addnum').blur(function () {
+            if (!regsvalue.test($('#input_addnum').val())) {
+                $('#input_addnum').val(1);
+            }
+        });
 
         $('#addnum').on('click', function () {
             var $goodsnum = $('#input_addnum').val();
             $goodsnum++;
             $('#input_addnum').val($goodsnum);
+
         });
         // 数量--
         $('#reducenum').on('click', function () {
@@ -197,6 +205,6 @@
             }
         });
     });
-$('footer').load('footer.html');
+    $('footer').load('footer.html');
 
 }(jQuery)

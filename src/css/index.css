@@ -127,7 +127,9 @@
     float: left;
     margin: 20px 0;
 }
+.rec_goodslist ul li:hover{
 
+}
 .rec_goodslist ul li a {
     /* float: left;*/
     position: relative;

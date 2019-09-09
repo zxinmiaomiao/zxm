@@ -53,38 +53,17 @@
     }
     new lunbo().init();
 
-    
+
     // 会员热购列表
 
-    class bestbuy {
-        constructor() {
-            this.bestbuy_scroll = $('.bestbuy_scroll');
-            this.bestbuy_right = $('.bestbuy_right');
-            this.btn = $(".btn");
-            this.btn_prev = $('.btn_prev');
-            this.btn_next = $('.btn_next');
-        }
-        init() {
-            // alert(1);
 
-            $(this.bestbuy_scroll).hover(function () {
-                $(this).find('.btn').css('opacity', '0').animate({
-                    opacity: 1
-                });
-                $(this).find('.btn').animate({
-                    opacity: 0
-                });
-            });
-        }
-    }
-    new bestbuy().init();
 
     // 渲染列表
     $.ajax({
         url: "http://localhost/1907-project-zxm/src/php/sanmu.php",
         dataType: 'json',
     }).done(function (recommends) {
-
+        console.log(recommends);
         let strhtml = '<ul>';
         $.each(recommends, function (index, value) {
             strhtml += `
