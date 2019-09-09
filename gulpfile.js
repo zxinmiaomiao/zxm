@@ -76,10 +76,6 @@ gulp.task('babel', function () {
         .pipe(gulp.dest('dist/js/'));
 });
 
-
-
-
-
 //6.png图片的压缩
 //图片压缩的插件：gulp-imagemin
 gulp.task('runimg', function () {
@@ -88,8 +84,6 @@ gulp.task('runimg', function () {
         .pipe(gulp.dest('dist/img/'));
 });
 
-
-
 //监听
 gulp.task('default', function () {
     //监听的文件    监听的任务
@@ -97,15 +91,6 @@ gulp.task('default', function () {
     //watch的第一个参数监听的文件的路径，第二个参数是监听运行的任务名
     //gulp.parallel() –并行运行任务 
 });
-
-
-
-
-
-
-
-
-
 
 //1.gulp.task(任务名称,回调函数); 默认的任务名称：default
 //2.gulp.src() : 引入文件的目录,路径

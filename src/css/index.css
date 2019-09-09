@@ -45,6 +45,7 @@
     position: absolute;
     left: 50%;
     width: 1500px;
+    height:400px;
     margin-left: -750px;
     vertical-align: top;
 }
@@ -71,6 +72,7 @@
     display: block;
     max-width: 96px;
     height: 18px;
+    line-height: 18px;
     color: #333;
     overflow: hidden;
 }
@@ -331,14 +333,12 @@
 .bestbuy_scroll .btn_prev {
     left: 0;
     background-position: -54px 0;
-
 }
 
 .bestbuy_scroll .btn_next {
     right: 0;
     background-position: 0 0;
 }
-
 
 .bestbuy_right {}
 
@@ -347,10 +347,24 @@
     width: 960px;
     overflow: hidden;
 }
+
 /* 山姆图片分类 */
-.samtype_pic{
-    margin:20px 0;
+
+.samtype_pic {
+    margin: 20px 0;
+    height: 80px;
 }
-.samtype_pic img{
-    width:33%;
+
+.samtype_pic a {
+    width: 33%;
+    overflow: hidden;
+    display: block;
+    margin-left:3px;
+    float: left;
+}
+
+.samtype_pic img {
+    width: 100%;
+    float: left;
+
 }

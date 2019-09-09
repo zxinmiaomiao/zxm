@@ -56,15 +56,17 @@ body a {
     height: 24px;
     line-height: 24px;
     position: relative;
+    overflow: hidden;
+
 }
 
 .top .top_right ul li::after {
     content: "";
     display: block;
     width: 1px;
-    height: 12px;
+    height: 18px;
+    margin-top:2px;
     background-color: #005c9d;
-    margin-top: 6px;
 }
 
 .top_right .line {
@@ -81,19 +83,24 @@ body a {
     display: block;
     float: left;
     width: 86px;
+ 
 }
 
 .top .top_right ul>li>a>span {
     padding-left: 10px;
+    float: left;
+    margin-right:5px;
 }
 
-.top .top_right ul>li:hover>a {
+.top .top_right ul>li>a:hover {
     background: #015c92;
     color: #fff;
 }
 
 .top .top_right a .iconfont {
     font-size: 10px;
+    float: left;
+    font-size:12px;
 }
 
 /* top2级导航 */
@@ -168,6 +175,8 @@ body a {
 .search_box .search_left {
     float: left;
     line-height: 67px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .search_left>.log {
@@ -200,6 +209,8 @@ body a {
 .modifyaddress {
     float: left;
     width: 74px;
+    height: 67px;
+    overflow: hidden;
 }
 
 .modifyaddress>span {
@@ -236,7 +247,7 @@ body a {
     word-break: break-all;
     overflow: hidden;
     line-height: 25px;
-    margin-top: -2px;
+    margin-top: 6px;
 }
 
 .samnews>li>a {
